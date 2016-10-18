@@ -1,0 +1,259 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	3dHullConvex/3dhull.cpp	/^vec3 A[MAXN];$/;"	v
+AP	ArticulationPoints/ArticulationPoints.cpp	/^void Articulation::AP()$/;"	f	class:Articulation	signature:()
+AP	include/ArticulationPoints.h	/^    void AP();    \/\/ prints articulation points$/;"	p	class:Articulation	access:public	signature:()
+APUtil	ArticulationPoints/ArticulationPoints.cpp	/^void Articulation::APUtil(int u)$/;"	f	class:Articulation	signature:(int u)
+APUtil	include/ArticulationPoints.h	/^    void APUtil(int v);$/;"	p	class:Articulation	access:private	signature:(int v)
+Articulation	ArticulationPoints/ArticulationPoints.cpp	/^Articulation::Articulation(int V):Graph(V)$/;"	f	class:Articulation	signature:(int V)
+Articulation	include/ArticulationPoints.h	/^	Articulation(int V);   \/\/ Constructor$/;"	p	class:Articulation	access:public	signature:(int V)
+Articulation	include/ArticulationPoints.h	/^class Articulation : public Graph$/;"	c	inherits:Graph
+Articulation::AP	ArticulationPoints/ArticulationPoints.cpp	/^void Articulation::AP()$/;"	f	class:Articulation	signature:()
+Articulation::AP	include/ArticulationPoints.h	/^    void AP();    \/\/ prints articulation points$/;"	p	class:Articulation	access:public	signature:()
+Articulation::APUtil	ArticulationPoints/ArticulationPoints.cpp	/^void Articulation::APUtil(int u)$/;"	f	class:Articulation	signature:(int u)
+Articulation::APUtil	include/ArticulationPoints.h	/^    void APUtil(int v);$/;"	p	class:Articulation	access:private	signature:(int v)
+Articulation::Articulation	ArticulationPoints/ArticulationPoints.cpp	/^Articulation::Articulation(int V):Graph(V)$/;"	f	class:Articulation	signature:(int V)
+Articulation::Articulation	include/ArticulationPoints.h	/^	Articulation(int V);   \/\/ Constructor$/;"	p	class:Articulation	access:public	signature:(int V)
+Articulation::ap	include/ArticulationPoints.h	/^    bool		*ap; $/;"	m	class:Articulation	access:private
+Articulation::disc	include/ArticulationPoints.h	/^    int			*disc;$/;"	m	class:Articulation	access:private
+Articulation::low	include/ArticulationPoints.h	/^    int			*low;$/;"	m	class:Articulation	access:private
+Articulation::parent	include/ArticulationPoints.h	/^    int			*parent;$/;"	m	class:Articulation	access:private
+Articulation::visited	include/ArticulationPoints.h	/^	bool		*visited;$/;"	m	class:Articulation	access:private
+Articulation::~Articulation	ArticulationPoints/ArticulationPoints.cpp	/^Articulation::~Articulation()$/;"	f	class:Articulation	signature:()
+Articulation::~Articulation	include/ArticulationPoints.h	/^	virtual ~Articulation();   \/\/ Disconstructor$/;"	p	class:Articulation	access:public	signature:()
+Bipartite	Bipartiteness/Bipartiteness.cpp	/^Bipartite::Bipartite(int V):Graph(V)$/;"	f	class:Bipartite	signature:(int V)
+Bipartite	include/Bipartiteness.h	/^        Bipartite(int V);$/;"	p	class:Bipartite	access:public	signature:(int V)
+Bipartite	include/Bipartiteness.h	/^class Bipartite : public Graph$/;"	c	inherits:Graph
+Bipartite::Bipartite	Bipartiteness/Bipartiteness.cpp	/^Bipartite::Bipartite(int V):Graph(V)$/;"	f	class:Bipartite	signature:(int V)
+Bipartite::Bipartite	include/Bipartiteness.h	/^        Bipartite(int V);$/;"	p	class:Bipartite	access:public	signature:(int V)
+Bipartite::color	include/Bipartiteness.h	/^        bool *color;$/;"	m	class:Bipartite	access:private
+Bipartite::cycle	include/Bipartiteness.h	/^        stack<int> cycle;$/;"	m	class:Bipartite	access:private
+Bipartite::dfs	Bipartiteness/Bipartiteness.cpp	/^void Bipartite::dfs(int v)$/;"	f	class:Bipartite	signature:(int v)
+Bipartite::dfs	include/Bipartiteness.h	/^		void dfs(int v);$/;"	p	class:Bipartite	access:public	signature:(int v)
+Bipartite::edgeTo	include/Bipartiteness.h	/^        int *edgeTo;$/;"	m	class:Bipartite	access:private
+Bipartite::isBi	Bipartiteness/Bipartiteness.cpp	/^bool Bipartite::isBi()$/;"	f	class:Bipartite	signature:()
+Bipartite::isBi	include/Bipartiteness.h	/^		bool isBi();$/;"	p	class:Bipartite	access:public	signature:()
+Bipartite::isBipartite	include/Bipartiteness.h	/^        bool isBipartite;$/;"	m	class:Bipartite	access:private
+Bipartite::marked	include/Bipartiteness.h	/^        bool *marked;$/;"	m	class:Bipartite	access:private
+Bipartite::~Bipartite	Bipartiteness/Bipartiteness.cpp	/^Bipartite::~Bipartite()$/;"	f	class:Bipartite	signature:()
+Bipartite::~Bipartite	include/Bipartiteness.h	/^		virtual ~Bipartite();$/;"	p	class:Bipartite	access:public	signature:()
+Destroy	include/redblacktree.hpp	/^    void			Destroy(RBNode<T> *p);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *p)
+Destroy	redblacktree/redblacktree.cpp	/^void RBTree<T>::Destroy(RBNode<T> *p)  $/;"	f	class:RBTree	signature:(RBNode<T> *p)
+E	3dHullConvex/3dhull.cpp	/^} E[MAXN][MAXN];$/;"	v	typeref:struct:twoset
+ExtEculi	ExtEuclideanAlgorithm/ExtEuclidean.cpp	/^int ExtEculi(int a, int b ,int & x ,int &y)$/;"	f	signature:(int a, int b ,int & x ,int &y)
+Graph	include/Graph.h	/^    Graph(int V);   \/\/ Constructor$/;"	p	class:Graph	access:public	signature:(int V)
+Graph	include/Graph.h	/^class Graph$/;"	c
+Graph	src/Graph.cpp	/^Graph::Graph(int V)$/;"	f	class:Graph	signature:(int V)
+Graph::Graph	include/Graph.h	/^    Graph(int V);   \/\/ Constructor$/;"	p	class:Graph	access:public	signature:(int V)
+Graph::Graph	src/Graph.cpp	/^Graph::Graph(int V)$/;"	f	class:Graph	signature:(int V)
+Graph::V	include/Graph.h	/^    int			V;    \/\/ No. of vertices$/;"	m	class:Graph	access:protected
+Graph::addEdge	include/Graph.h	/^    void addEdge(int v, int w);   \/\/ function to add an edge to graph$/;"	p	class:Graph	access:public	signature:(int v, int w)
+Graph::addEdge	src/Graph.cpp	/^void Graph::addEdge(int v, int w)$/;"	f	class:Graph	signature:(int v, int w)
+Graph::adj	include/Graph.h	/^    list<int> *adj;    \/\/ A dynamic array of adjacency lists$/;"	m	class:Graph	access:protected
+Graph::~Graph	include/Graph.h	/^	virtual ~Graph();   \/\/ Disconstructor$/;"	p	class:Graph	access:public	signature:()
+Graph::~Graph	src/Graph.cpp	/^Graph::~Graph()$/;"	f	class:Graph	signature:()
+I	3dHullConvex/3dhull.cpp	/^	int I[3];$/;"	m	struct:face	file:	access:public
+InsertReBalance	include/redblacktree.hpp	/^    void			InsertReBalance(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+InsertReBalance	redblacktree/redblacktree.cpp	/^void RBTree<T>::InsertReBalance(RBNode<T> *node)  $/;"	f	class:RBTree	signature:(RBNode<T> *node)
+InsertUnique	include/redblacktree.hpp	/^    bool			InsertUnique(const T &v1);  $/;"	p	class:RBTree	access:public	signature:(const T &v1)
+InsertUnique	redblacktree/redblacktree.cpp	/^bool RBTree<T>::InsertUnique(const T &v1)  $/;"	f	class:RBTree	signature:(const T &v1)
+MAXN	3dHullConvex/3dhull.cpp	13;"	d	file:
+MinPairs	pairs/pairs.cpp	/^int MinPairs(vector<vec3> v)$/;"	f	signature:(vector<vec3> v)
+N	3dHullConvex/3dhullV2.0.cpp	7;"	d	file:
+NIL	ArticulationPoints/ArticulationPoints.cpp	6;"	d	file:
+NIL	src/Graph.cpp	3;"	d	file:
+PR	3dHullConvex/3dhullV2.0.cpp	6;"	d	file:
+RBNode	include/redblacktree.hpp	/^    RBNode():left(NULL),right(NULL),parent(NULL),val(T()),color(_rb_red_node){}  $/;"	f	struct:RBNode	access:public	signature:()
+RBNode	include/redblacktree.hpp	/^    RBNode(const T &v1):left(NULL),right(NULL),parent(NULL),val(v1),color(_rb_red_node){}  $/;"	f	struct:RBNode	access:public	signature:(const T &v1)
+RBNode	include/redblacktree.hpp	/^struct RBNode  $/;"	s
+RBNode::RBNode	include/redblacktree.hpp	/^    RBNode():left(NULL),right(NULL),parent(NULL),val(T()),color(_rb_red_node){}  $/;"	f	struct:RBNode	access:public	signature:()
+RBNode::RBNode	include/redblacktree.hpp	/^    RBNode(const T &v1):left(NULL),right(NULL),parent(NULL),val(v1),color(_rb_red_node){}  $/;"	f	struct:RBNode	access:public	signature:(const T &v1)
+RBNode::color	include/redblacktree.hpp	/^    int     color;  $/;"	m	struct:RBNode	access:public
+RBNode::left	include/redblacktree.hpp	/^    RBNode  *left;  $/;"	m	struct:RBNode	access:public
+RBNode::parent	include/redblacktree.hpp	/^    RBNode  *parent;  $/;"	m	struct:RBNode	access:public
+RBNode::right	include/redblacktree.hpp	/^    RBNode  *right;  $/;"	m	struct:RBNode	access:public
+RBNode::val	include/redblacktree.hpp	/^    T       val;  $/;"	m	struct:RBNode	access:public
+RBTree	include/redblacktree.hpp	/^    RBTree():root(NULL){}  $/;"	f	class:RBTree	access:public	signature:()
+RBTree	include/redblacktree.hpp	/^class RBTree  $/;"	c
+RBTree::Destroy	include/redblacktree.hpp	/^    void			Destroy(RBNode<T> *p);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *p)
+RBTree::Destroy	redblacktree/redblacktree.cpp	/^void RBTree<T>::Destroy(RBNode<T> *p)  $/;"	f	class:RBTree	signature:(RBNode<T> *p)
+RBTree::InsertReBalance	include/redblacktree.hpp	/^    void			InsertReBalance(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+RBTree::InsertReBalance	redblacktree/redblacktree.cpp	/^void RBTree<T>::InsertReBalance(RBNode<T> *node)  $/;"	f	class:RBTree	signature:(RBNode<T> *node)
+RBTree::InsertUnique	include/redblacktree.hpp	/^    bool			InsertUnique(const T &v1);  $/;"	p	class:RBTree	access:public	signature:(const T &v1)
+RBTree::InsertUnique	redblacktree/redblacktree.cpp	/^bool RBTree<T>::InsertUnique(const T &v1)  $/;"	f	class:RBTree	signature:(const T &v1)
+RBTree::RBTree	include/redblacktree.hpp	/^    RBTree():root(NULL){}  $/;"	f	class:RBTree	access:public	signature:()
+RBTree::Rebalance_for_erase	include/redblacktree.hpp	/^    RBNode<T> *		Rebalance_for_erase(RBNode<T> *p);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *p)
+RBTree::Rebalance_for_erase	redblacktree/redblacktree.cpp	/^RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)$/;"	f	class:RBTree	signature:(RBNode<T> *z)
+RBTree::Search	include/redblacktree.hpp	/^    RBNode<T> *		Search(const T &v1\/*, RBNode<T> *&node*\/);  $/;"	p	class:RBTree	access:public	signature:(const T &v1 )
+RBTree::Search	redblacktree/redblacktree.cpp	/^RBNode<T> * RBTree<T>::Search(const T &v1\/*,RBNode<T> *&node*\/)  $/;"	f	class:RBTree	signature:(const T &v1 )
+RBTree::_rbtree_rotate_left	include/redblacktree.hpp	/^    RBNode<T>*		_rbtree_rotate_left(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+RBTree::_rbtree_rotate_left	redblacktree/redblacktree.cpp	/^RBNode<T> *RBTree<T>::_rbtree_rotate_left(RBNode<T> *x)  $/;"	f	class:RBTree	signature:(RBNode<T> *x)
+RBTree::_rbtree_rotate_right	include/redblacktree.hpp	/^    RBNode<T>*		_rbtree_rotate_right(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+RBTree::_rbtree_rotate_right	redblacktree/redblacktree.cpp	/^RBNode<T>* RBTree<T>::_rbtree_rotate_right(RBNode<T> *x)  $/;"	f	class:RBTree	signature:(RBNode<T> *x)
+RBTree::erase	include/redblacktree.hpp	/^	int				erase(const T &v1);$/;"	p	class:RBTree	access:public	signature:(const T &v1)
+RBTree::erase	redblacktree/redblacktree.cpp	/^int RBTree<T>::erase(const T & v1)$/;"	f	class:RBTree	signature:(const T & v1)
+RBTree::print	include/redblacktree.hpp	/^    void			print();  $/;"	p	class:RBTree	access:public	signature:()
+RBTree::print	redblacktree/redblacktree.cpp	/^void RBTree<T>::print()  $/;"	f	class:RBTree	signature:()
+RBTree::root	include/redblacktree.hpp	/^    RBNode<T> *root;  $/;"	m	class:RBTree	access:private
+RBTree::~RBTree	include/redblacktree.hpp	/^    ~RBTree()  $/;"	f	class:RBTree	access:public	signature:()
+Rebalance_for_erase	include/redblacktree.hpp	/^    RBNode<T> *		Rebalance_for_erase(RBNode<T> *p);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *p)
+Rebalance_for_erase	redblacktree/redblacktree.cpp	/^RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)$/;"	f	class:RBTree	signature:(RBNode<T> *z)
+Search	include/redblacktree.hpp	/^    RBNode<T> *		Search(const T &v1\/*, RBNode<T> *&node*\/);  $/;"	p	class:RBTree	access:public	signature:(const T &v1 )
+Search	redblacktree/redblacktree.cpp	/^RBNode<T> * RBTree<T>::Search(const T &v1\/*,RBNode<T> *&node*\/)  $/;"	f	class:RBTree	signature:(const T &v1 )
+T3dhull	3dHullConvex/3dhullV2.0.cpp	/^struct T3dhull$/;"	s	file:
+T3dhull::area	3dHullConvex/3dhullV2.0.cpp	/^    double area()\/\/表面积$/;"	f	struct:T3dhull	access:public	signature:()
+T3dhull::area	3dHullConvex/3dhullV2.0.cpp	/^    double area(TPoint a,TPoint b,TPoint c){return dist((b-a)*(c-a));}\/\/三角形面积*2$/;"	f	struct:T3dhull	access:public	signature:(TPoint a,TPoint b,TPoint c)
+T3dhull::construct	3dHullConvex/3dhullV2.0.cpp	/^    void construct()\/\/构建凸包$/;"	f	struct:T3dhull	access:public	signature:()
+T3dhull::deal	3dHullConvex/3dhullV2.0.cpp	/^    void deal(int p,int a,int b)$/;"	f	struct:T3dhull	access:public	signature:(int p,int a,int b)
+T3dhull::dfs	3dHullConvex/3dhullV2.0.cpp	/^    void dfs(int p,int cnt)\/\/维护凸包，如果点p在凸包外更新凸包$/;"	f	struct:T3dhull	access:public	signature:(int p,int cnt)
+T3dhull::dist	3dHullConvex/3dhullV2.0.cpp	/^    double dist(TPoint a){return sqrt(a.x*a.x+a.y*a.y+a.z*a.z);}\/\/两点长度$/;"	f	struct:T3dhull	access:public	signature:(TPoint a)
+T3dhull::facepolygon	3dHullConvex/3dhullV2.0.cpp	/^    int facepolygon()\/\/表面多边形数$/;"	f	struct:T3dhull	access:public	signature:()
+T3dhull::facetri	3dHullConvex/3dhullV2.0.cpp	/^    int facetri() {return trianglecnt;}\/\/表面三角形数$/;"	f	struct:T3dhull	access:public	signature:()
+T3dhull::n	3dHullConvex/3dhullV2.0.cpp	/^    int n;\/\/初始点数$/;"	m	struct:T3dhull	file:	access:public
+T3dhull::ply	3dHullConvex/3dhullV2.0.cpp	/^    TPoint ply[N];\/\/初始点$/;"	m	struct:T3dhull	file:	access:public
+T3dhull::ptoplane	3dHullConvex/3dhullV2.0.cpp	/^    double ptoplane(TPoint &p,fac &f)\/\/正：点在面同向$/;"	f	struct:T3dhull	access:public	signature:(TPoint &p,fac &f)
+T3dhull::same	3dHullConvex/3dhullV2.0.cpp	/^    bool same(int s,int e)\/\/判断两个面是否为同一面$/;"	f	struct:T3dhull	access:public	signature:(int s,int e)
+T3dhull::tri	3dHullConvex/3dhullV2.0.cpp	/^    fac tri[N];\/\/凸包三角形$/;"	m	struct:T3dhull	file:	access:public
+T3dhull::trianglecnt	3dHullConvex/3dhullV2.0.cpp	/^    int trianglecnt;\/\/凸包上三角形数$/;"	m	struct:T3dhull	file:	access:public
+T3dhull::vis	3dHullConvex/3dhullV2.0.cpp	/^    int vis[N][N];\/\/点i到点j是属于哪个面$/;"	m	struct:T3dhull	file:	access:public
+T3dhull::volume	3dHullConvex/3dhullV2.0.cpp	/^    double volume()\/\/体积$/;"	f	struct:T3dhull	access:public	signature:()
+T3dhull::volume	3dHullConvex/3dhullV2.0.cpp	/^    double volume(TPoint a,TPoint b,TPoint c,TPoint d){return (b-a)*(c-a)^(d-a);}\/\/四面体有向体积*6$/;"	f	struct:T3dhull	access:public	signature:(TPoint a,TPoint b,TPoint c,TPoint d)
+TPoint	3dHullConvex/3dhullV2.0.cpp	/^    TPoint(){}$/;"	f	struct:TPoint	access:public	signature:()
+TPoint	3dHullConvex/3dhullV2.0.cpp	/^    TPoint(double _x,double _y,double _z):x(_x),y(_y),z(_z){}$/;"	f	struct:TPoint	access:public	signature:(double _x,double _y,double _z)
+TPoint	3dHullConvex/3dhullV2.0.cpp	/^struct TPoint$/;"	s	file:
+TPoint::TPoint	3dHullConvex/3dhullV2.0.cpp	/^    TPoint(){}$/;"	f	struct:TPoint	access:public	signature:()
+TPoint::TPoint	3dHullConvex/3dhullV2.0.cpp	/^    TPoint(double _x,double _y,double _z):x(_x),y(_y),z(_z){}$/;"	f	struct:TPoint	access:public	signature:(double _x,double _y,double _z)
+TPoint::operator *	3dHullConvex/3dhullV2.0.cpp	/^    TPoint operator*(const TPoint p) {return TPoint(y*p.z-z*p.y,z*p.x-x*p.z,x*p.y-y*p.x);}\/\/叉积$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+TPoint::operator -	3dHullConvex/3dhullV2.0.cpp	/^    TPoint operator-(const TPoint p) {return TPoint(x-p.x,y-p.y,z-p.z);}$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+TPoint::operator ^	3dHullConvex/3dhullV2.0.cpp	/^    double operator^(const TPoint p) {return x*p.x+y*p.y+z*p.z;}\/\/点积$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+TPoint::x	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+TPoint::y	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+TPoint::z	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+V	include/Graph.h	/^    int			V;    \/\/ No. of vertices$/;"	m	class:Graph	access:protected
+X	include/Vec.h	/^	vtype X[3];$/;"	m	class:vec3	access:public
+__ARTICULATION_H_	include/ArticulationPoints.h	2;"	d
+__BIPARTITENESS_H_	include/Bipartiteness.h	2;"	d
+__GRAPH_H_	include/Graph.h	2;"	d
+__REDBLACK_TREE_H_	include/redblacktree.hpp	2;"	d
+__Vec_H_	include/Vec.h	2;"	d
+_rb_black_node	include/redblacktree.hpp	/^static int _rb_black_node = 0;  $/;"	v
+_rb_red_node	include/redblacktree.hpp	/^static int _rb_red_node   = 1;  $/;"	v
+_rbtree_rotate_left	include/redblacktree.hpp	/^    RBNode<T>*		_rbtree_rotate_left(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+_rbtree_rotate_left	redblacktree/redblacktree.cpp	/^RBNode<T> *RBTree<T>::_rbtree_rotate_left(RBNode<T> *x)  $/;"	f	class:RBTree	signature:(RBNode<T> *x)
+_rbtree_rotate_right	include/redblacktree.hpp	/^    RBNode<T>*		_rbtree_rotate_right(RBNode<T> *node);  $/;"	p	class:RBTree	access:public	signature:(RBNode<T> *node)
+_rbtree_rotate_right	redblacktree/redblacktree.cpp	/^RBNode<T>* RBTree<T>::_rbtree_rotate_right(RBNode<T> *x)  $/;"	f	class:RBTree	signature:(RBNode<T> *x)
+a	3dHullConvex/3dhull.cpp	/^	int a, b;$/;"	m	struct:twoset	file:	access:public
+a	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+addEdge	include/Graph.h	/^    void addEdge(int v, int w);   \/\/ function to add an edge to graph$/;"	p	class:Graph	access:public	signature:(int v, int w)
+addEdge	src/Graph.cpp	/^void Graph::addEdge(int v, int w)$/;"	f	class:Graph	signature:(int v, int w)
+adj	include/Graph.h	/^    list<int> *adj;    \/\/ A dynamic array of adjacency lists$/;"	m	class:Graph	access:protected
+ap	include/ArticulationPoints.h	/^    bool		*ap; $/;"	m	class:Articulation	access:private
+area	3dHullConvex/3dhullV2.0.cpp	/^    double area()\/\/表面积$/;"	f	struct:T3dhull	access:public	signature:()
+area	3dHullConvex/3dhullV2.0.cpp	/^    double area(TPoint a,TPoint b,TPoint c){return dist((b-a)*(c-a));}\/\/三角形面积*2$/;"	f	struct:T3dhull	access:public	signature:(TPoint a,TPoint b,TPoint c)
+b	3dHullConvex/3dhull.cpp	/^	int a, b;$/;"	m	struct:twoset	file:	access:public
+b	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+c	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+color	include/Bipartiteness.h	/^        bool *color;$/;"	m	class:Bipartite	access:private
+color	include/redblacktree.hpp	/^    int     color;  $/;"	m	struct:RBNode	access:public
+construct	3dHullConvex/3dhullV2.0.cpp	/^    void construct()\/\/构建凸包$/;"	f	struct:T3dhull	access:public	signature:()
+contains	3dHullConvex/3dhull.cpp	/^	bool contains(int x) { return a == x || b == x; }$/;"	f	struct:twoset	access:public	signature:(int x)
+cycle	include/Bipartiteness.h	/^        stack<int> cycle;$/;"	m	class:Bipartite	access:private
+deal	3dHullConvex/3dhullV2.0.cpp	/^    void deal(int p,int a,int b)$/;"	f	struct:T3dhull	access:public	signature:(int p,int a,int b)
+dfs	3dHullConvex/3dhullV2.0.cpp	/^    void dfs(int p,int cnt)\/\/维护凸包，如果点p在凸包外更新凸包$/;"	f	struct:T3dhull	access:public	signature:(int p,int cnt)
+dfs	Bipartiteness/Bipartiteness.cpp	/^void Bipartite::dfs(int v)$/;"	f	class:Bipartite	signature:(int v)
+dfs	include/Bipartiteness.h	/^		void dfs(int v);$/;"	p	class:Bipartite	access:public	signature:(int v)
+disc	3dHullConvex/3dhull.cpp	/^	vtype disc;$/;"	m	struct:face	file:	access:public
+disc	include/ArticulationPoints.h	/^    int			*disc;$/;"	m	class:Articulation	access:private
+dist	3dHullConvex/3dhullV2.0.cpp	/^    double dist(TPoint a){return sqrt(a.x*a.x+a.y*a.y+a.z*a.z);}\/\/两点长度$/;"	f	struct:T3dhull	access:public	signature:(TPoint a)
+dot	include/Vec.h	/^	vtype dot(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+edgeTo	include/Bipartiteness.h	/^        int *edgeTo;$/;"	m	class:Bipartite	access:private
+erase	3dHullConvex/3dhull.cpp	/^	void erase(int x) { (a == x ? a : b) = -1; }$/;"	f	struct:twoset	access:public	signature:(int x)
+erase	include/redblacktree.hpp	/^	int				erase(const T &v1);$/;"	p	class:RBTree	access:public	signature:(const T &v1)
+erase	redblacktree/redblacktree.cpp	/^int RBTree<T>::erase(const T & v1)$/;"	f	class:RBTree	signature:(const T & v1)
+fac	3dHullConvex/3dhullV2.0.cpp	/^struct fac\/\/$/;"	s	file:
+fac::a	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+fac::b	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+fac::c	3dHullConvex/3dhullV2.0.cpp	/^    int a,b,c;\/\/凸包一个面上的三个点的编号$/;"	m	struct:fac	file:	access:public
+fac::ok	3dHullConvex/3dhullV2.0.cpp	/^    bool ok;\/\/该面是否是最终凸包中的面$/;"	m	struct:fac	file:	access:public
+face	3dHullConvex/3dhull.cpp	/^struct face {$/;"	s	file:
+face::I	3dHullConvex/3dhull.cpp	/^	int I[3];$/;"	m	struct:face	file:	access:public
+face::disc	3dHullConvex/3dhull.cpp	/^	vtype disc;$/;"	m	struct:face	file:	access:public
+face::norm	3dHullConvex/3dhull.cpp	/^	vec3 norm;$/;"	m	struct:face	file:	access:public
+facepolygon	3dHullConvex/3dhullV2.0.cpp	/^    int facepolygon()\/\/表面多边形数$/;"	f	struct:T3dhull	access:public	signature:()
+facetri	3dHullConvex/3dhullV2.0.cpp	/^    int facetri() {return trianglecnt;}\/\/表面三角形数$/;"	f	struct:T3dhull	access:public	signature:()
+hull	3dHullConvex/3dhullV2.0.cpp	/^}hull;$/;"	v	typeref:struct:T3dhull
+init_fourface	3dHullConvex/3dhull.cpp	/^bool init_fourface(int n)$/;"	f	signature:(int n)
+insert	3dHullConvex/3dhull.cpp	/^	void insert(int x) { (a == -1 ? a : b) = x; }$/;"	f	struct:twoset	access:public	signature:(int x)
+isBi	Bipartiteness/Bipartiteness.cpp	/^bool Bipartite::isBi()$/;"	f	class:Bipartite	signature:()
+isBi	include/Bipartiteness.h	/^		bool isBi();$/;"	p	class:Bipartite	access:public	signature:()
+isBipartite	include/Bipartiteness.h	/^        bool isBipartite;$/;"	m	class:Bipartite	access:private
+left	include/redblacktree.hpp	/^    RBNode  *left;  $/;"	m	struct:RBNode	access:public
+low	include/ArticulationPoints.h	/^    int			*low;$/;"	m	class:Articulation	access:private
+main	3dHullConvex/3dhull.cpp	/^int main() {$/;"	f	signature:()
+main	3dHullConvex/3dhullV2.0.cpp	/^int main()$/;"	f	signature:()
+main	ArticulationPoints/ArticulationMain.cpp	/^int main()$/;"	f	signature:()
+main	Bipartiteness/Bipartitenessmain.cpp	/^int main()$/;"	f	signature:()
+main	ExtEuclideanAlgorithm/ExtEuclidean.cpp	/^int main()$/;"	f	signature:()
+main	pairs/pairs.cpp	/^int main()$/;"	f	signature:()
+main	redblacktree/redblacktreemain.cpp	/^int main()  $/;"	f	signature:()
+make_face	3dHullConvex/3dhull.cpp	/^face make_face(int i, int j, int k, int inside_i) {$/;"	f	signature:(int i, int j, int k, int inside_i)
+marked	include/Bipartiteness.h	/^        bool *marked;$/;"	m	class:Bipartite	access:private
+n	3dHullConvex/3dhullV2.0.cpp	/^    int n;\/\/初始点数$/;"	m	struct:T3dhull	file:	access:public
+norm	3dHullConvex/3dhull.cpp	/^	vec3 norm;$/;"	m	struct:face	file:	access:public
+ok	3dHullConvex/3dhullV2.0.cpp	/^    bool ok;\/\/该面是否是最终凸包中的面$/;"	m	struct:fac	file:	access:public
+operator *	3dHullConvex/3dhullV2.0.cpp	/^    TPoint operator*(const TPoint p) {return TPoint(y*p.z-z*p.y,z*p.x-x*p.z,x*p.y-y*p.x);}\/\/叉积$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+operator *	include/Vec.h	/^	vec3 operator*(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+operator -	3dHullConvex/3dhullV2.0.cpp	/^    TPoint operator-(const TPoint p) {return TPoint(x-p.x,y-p.y,z-p.z);}$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+operator -	include/Vec.h	/^	vec3 operator-() const {$/;"	f	class:vec3	access:public	signature:() const
+operator -	include/Vec.h	/^	vec3 operator-(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+operator ^	3dHullConvex/3dhullV2.0.cpp	/^    double operator^(const TPoint p) {return x*p.x+y*p.y+z*p.z;}\/\/点积$/;"	f	struct:TPoint	access:public	signature:(const TPoint p)
+parent	include/ArticulationPoints.h	/^    int			*parent;$/;"	m	class:Articulation	access:private
+parent	include/redblacktree.hpp	/^    RBNode  *parent;  $/;"	m	struct:RBNode	access:public
+ply	3dHullConvex/3dhullV2.0.cpp	/^    TPoint ply[N];\/\/初始点$/;"	m	struct:T3dhull	file:	access:public
+print	include/redblacktree.hpp	/^    void			print();  $/;"	p	class:RBTree	access:public	signature:()
+print	redblacktree/redblacktree.cpp	/^void RBTree<T>::print()  $/;"	f	class:RBTree	signature:()
+ptoplane	3dHullConvex/3dhullV2.0.cpp	/^    double ptoplane(TPoint &p,fac &f)\/\/正：点在面同向$/;"	f	struct:T3dhull	access:public	signature:(TPoint &p,fac &f)
+right	include/redblacktree.hpp	/^    RBNode  *right;  $/;"	m	struct:RBNode	access:public
+root	include/redblacktree.hpp	/^    RBNode<T> *root;  $/;"	m	class:RBTree	access:private
+same	3dHullConvex/3dhullV2.0.cpp	/^    bool same(int s,int e)\/\/判断两个面是否为同一面$/;"	f	struct:T3dhull	access:public	signature:(int s,int e)
+size	3dHullConvex/3dhull.cpp	/^	int size() { return (a != -1) + (b != -1); }$/;"	f	struct:twoset	access:public	signature:()
+tri	3dHullConvex/3dhullV2.0.cpp	/^    fac tri[N];\/\/凸包三角形$/;"	m	struct:T3dhull	file:	access:public
+trianglecnt	3dHullConvex/3dhullV2.0.cpp	/^    int trianglecnt;\/\/凸包上三角形数$/;"	m	struct:T3dhull	file:	access:public
+twoset	3dHullConvex/3dhull.cpp	/^struct twoset {$/;"	s	file:
+twoset::a	3dHullConvex/3dhull.cpp	/^	int a, b;$/;"	m	struct:twoset	file:	access:public
+twoset::b	3dHullConvex/3dhull.cpp	/^	int a, b;$/;"	m	struct:twoset	file:	access:public
+twoset::contains	3dHullConvex/3dhull.cpp	/^	bool contains(int x) { return a == x || b == x; }$/;"	f	struct:twoset	access:public	signature:(int x)
+twoset::erase	3dHullConvex/3dhull.cpp	/^	void erase(int x) { (a == x ? a : b) = -1; }$/;"	f	struct:twoset	access:public	signature:(int x)
+twoset::insert	3dHullConvex/3dhull.cpp	/^	void insert(int x) { (a == -1 ? a : b) = x; }$/;"	f	struct:twoset	access:public	signature:(int x)
+twoset::size	3dHullConvex/3dhull.cpp	/^	int size() { return (a != -1) + (b != -1); }$/;"	f	struct:twoset	access:public	signature:()
+val	include/redblacktree.hpp	/^    T       val;  $/;"	m	struct:RBNode	access:public
+vec3	include/Vec.h	/^	vec3() { X[0] = X[1] = X[2] = 0; }$/;"	f	class:vec3	access:public	signature:()
+vec3	include/Vec.h	/^	vec3(vtype x, vtype y, vtype z) { X[0] = x; X[1] = y; X[2] = z; }$/;"	f	class:vec3	access:public	signature:(vtype x, vtype y, vtype z)
+vec3	include/Vec.h	/^class vec3 {$/;"	c
+vec3::X	include/Vec.h	/^	vtype X[3];$/;"	m	class:vec3	access:public
+vec3::dot	include/Vec.h	/^	vtype dot(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+vec3::operator *	include/Vec.h	/^	vec3 operator*(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+vec3::operator -	include/Vec.h	/^	vec3 operator-() const {$/;"	f	class:vec3	access:public	signature:() const
+vec3::operator -	include/Vec.h	/^	vec3 operator-(const vec3& v) const {$/;"	f	class:vec3	access:public	signature:(const vec3& v) const
+vec3::vec3	include/Vec.h	/^	vec3() { X[0] = X[1] = X[2] = 0; }$/;"	f	class:vec3	access:public	signature:()
+vec3::vec3	include/Vec.h	/^	vec3(vtype x, vtype y, vtype z) { X[0] = x; X[1] = y; X[2] = z; }$/;"	f	class:vec3	access:public	signature:(vtype x, vtype y, vtype z)
+vis	3dHullConvex/3dhullV2.0.cpp	/^    int vis[N][N];\/\/点i到点j是属于哪个面$/;"	m	struct:T3dhull	file:	access:public
+visited	include/ArticulationPoints.h	/^	bool		*visited;$/;"	m	class:Articulation	access:private
+volume	3dHullConvex/3dhullV2.0.cpp	/^    double volume()\/\/体积$/;"	f	struct:T3dhull	access:public	signature:()
+volume	3dHullConvex/3dhullV2.0.cpp	/^    double volume(TPoint a,TPoint b,TPoint c,TPoint d){return (b-a)*(c-a)^(d-a);}\/\/四面体有向体积*6$/;"	f	struct:T3dhull	access:public	signature:(TPoint a,TPoint b,TPoint c,TPoint d)
+vtype	3dHullConvex/3dhull.cpp	/^typedef long long vtype;$/;"	t	file:
+vtype	include/Vec.h	/^typedef long long vtype;$/;"	t
+x	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+y	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+z	3dHullConvex/3dhullV2.0.cpp	/^    double x,y,z;$/;"	m	struct:TPoint	file:	access:public
+~Articulation	ArticulationPoints/ArticulationPoints.cpp	/^Articulation::~Articulation()$/;"	f	class:Articulation	signature:()
+~Articulation	include/ArticulationPoints.h	/^	virtual ~Articulation();   \/\/ Disconstructor$/;"	p	class:Articulation	access:public	signature:()
+~Bipartite	Bipartiteness/Bipartiteness.cpp	/^Bipartite::~Bipartite()$/;"	f	class:Bipartite	signature:()
+~Bipartite	include/Bipartiteness.h	/^		virtual ~Bipartite();$/;"	p	class:Bipartite	access:public	signature:()
+~Graph	include/Graph.h	/^	virtual ~Graph();   \/\/ Disconstructor$/;"	p	class:Graph	access:public	signature:()
+~Graph	src/Graph.cpp	/^Graph::~Graph()$/;"	f	class:Graph	signature:()
+~RBTree	include/redblacktree.hpp	/^    ~RBTree()  $/;"	f	class:RBTree	access:public	signature:()
