@@ -418,3 +418,38 @@ void RBTree<T>::Destroy(RBNode<T> *p)
     }  
     delete p;  
 }  
+
+template<typename T>  
+void RBTree<T>::output()  
+{
+	if (root->right)
+    {
+        output_impl(root->right, false, "");
+    }
+    cout <<"b:"<<root->val << endl;
+    if (root->left)
+    {
+        output_impl(root->left, true, "");
+    }
+}
+
+
+template<typename T>  
+void RBTree<T>::output_impl(RBNode<T>* n,bool left,string const & indent)  
+{
+	if (n->right)
+    {
+        output_impl(n->right, false, indent + (left ? "|     " : "      "));
+    }
+    cout << indent;
+    cout << (left ? '\\' : '/');
+    cout << "-----";
+	if(n->color == 0)
+		cout <<"b:"<< n->val << endl;
+	else
+		cout <<"r:"<< n->val << endl;
+    if (n->left)
+    {
+        output_impl(n->left, true, indent + (left ? "      " : "|     "));
+    }
+}
