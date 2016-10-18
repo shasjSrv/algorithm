@@ -1,5 +1,8 @@
+#ifndef __RED_BLACKTREE_H_
+#define __RED_BLACKTREE_H_
 #include <iostream>  
-#include <queue>  
+#include <queue> 
+#include <string>
 using namespace std;  
 static int _rb_black_node = 0;  
 static int _rb_red_node   = 1;  
@@ -45,7 +48,10 @@ public:
     void			InsertReBalance(RBNode<T> *node);  
     RBNode<T>*		_rbtree_rotate_left(RBNode<T> *node);  
     RBNode<T>*		_rbtree_rotate_right(RBNode<T> *node);  
+	void			output();
+	void			output_impl(RBNode<T>* n,bool left,string const & indent);
 private:  
     RBNode<T> *root;  
 };  
     
+#endif
