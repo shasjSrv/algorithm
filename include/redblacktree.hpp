@@ -6,6 +6,9 @@
 using namespace std;  
 static int _rb_black_node = 0;  
 static int _rb_red_node   = 1;  
+
+
+
 template<typename T>  
 struct RBNode  
 {  
