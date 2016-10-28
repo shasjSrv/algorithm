@@ -46,14 +46,19 @@ int main()
 	cout<<"time:"<<stop<<endl;
 	cout<<"time:"<<stop - start <<endl;
 	obj.output();
-	obj.erase(17);
-	obj.output();
-    obj.erase(1);  
-	obj.output();
-    obj.erase(76);  
-	obj.output();
-    obj.erase(9);  
-	obj.output();
+	for(int i = 0; i < v.size() - 1;i++){
+		cout<<"the ith:"<<i<<"  is"<<v[i]<<endl;
+		obj.erase(v[i]);
+		obj.output();
+	}
+	/*obj.erase(17);*/
+	//obj.output();
+    //obj.erase(1);  
+	//obj.output();
+    //obj.erase(76);  
+	//obj.output();
+    //obj.erase(9);  
+	/*obj.output();*/
 	cout<<"-------------------------------"<<endl;
 	int num = v.size() + 1;
 	readDataset(v,num);
@@ -70,7 +75,7 @@ int main()
 	cout<<"time:"<<start<<endl;
 	for(int i = 0; i < v.size(); i++)
 		bigtree.InsertUnique(v[i]);
-    stop = time(NULL);	
+	stop = time(NULL);	
 	cout<<"time:"<<stop<<endl;
 	cout<<"time:"<<stop - start <<endl;
 	cout<<"v.size()"<<v.size()<<endl;

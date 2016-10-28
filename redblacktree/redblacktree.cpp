@@ -251,13 +251,13 @@ RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)
 		cout<<"3"<<endl;
 		
 	}
-	cout<<root->left->val<<endl;
+	//cout<<root->left->val<<endl;
 	if(y->color == _rb_black_node){
 		while(x != root && (x == NULL || x->color == _rb_black_node)){
 			cout<<"come in !"<<endl;
 			if(x_parent->left == x){
 				RBNode<T> * w = x_parent->right;	
-				if(w->color = _rb_red_node){
+				if(w->color == _rb_red_node){
 					x_parent->color = _rb_red_node;
 					w->color = _rb_black_node;
 					_rbtree_rotate_left(x_parent);
@@ -273,7 +273,7 @@ RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)
 				}else{
 					if(w->right == NULL || w->right->color == _rb_black_node){
 						if(w->left)  w->left->color = _rb_black_node;
-						w->right->color = _rb_red_node;
+						if(w->right) w->right->color = _rb_red_node;
 						_rbtree_rotate_right(w);
 						w = x_parent->right;
 					}
@@ -285,7 +285,7 @@ RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)
 				}			
 			}else{
 				RBNode<T> * w = x_parent->left;
-				if(w->color = _rb_red_node){
+				if(w->color == _rb_red_node){
 					x_parent->color = _rb_red_node;
 					w->color = _rb_black_node;
 					_rbtree_rotate_right(x_parent);
@@ -301,7 +301,7 @@ RBNode<T>* RBTree<T>::Rebalance_for_erase(RBNode<T> *z)
 				}else{
 					if(w->left == NULL || w->left->color == _rb_black_node){
 						if(w->right)  w->right->color = _rb_black_node;
-						w->left->color = _rb_red_node;
+						if(w->left) w->left->color = _rb_red_node;
 						_rbtree_rotate_left(w);
 						w = x_parent->left;
 					}
