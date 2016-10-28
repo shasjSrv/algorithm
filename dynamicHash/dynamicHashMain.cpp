@@ -30,5 +30,17 @@ int main()
 	example.calculateHash(9);
 	example.calculateHash(13);
 	example.output();
+	example.calculateHash(0);
+	example.calculateHash(8);
+	example.calculateHash(36);
+	example.calculateHash(28);
+	example.output();
+	example.deleteVal(12);
+	example.deleteVal(28);
+	example.output();
+	example.calculateHash(12);
+	example.calculateHash(28);
+	example.output();
+	
 
 }

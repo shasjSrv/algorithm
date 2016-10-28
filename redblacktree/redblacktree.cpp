@@ -441,6 +441,10 @@ void RBTree<T>::output_impl(RBNode<T>* n,bool left,string const & indent)
     {
         output_impl(n->right, false, indent + (left ? "|     " : "      "));
     }
+	if(n->left == NULL && n->right ==NULL){
+		if(left)
+			cout<<indent+'|'<<endl;
+	}
     cout << indent;
     cout << (left ? '\\' : '/');
     cout << "-----";
@@ -448,6 +452,10 @@ void RBTree<T>::output_impl(RBNode<T>* n,bool left,string const & indent)
 		cout <<"b:"<< n->val << endl;
 	else
 		cout <<"r:"<< n->val << endl;
+	if(n->left == NULL && n->right ==NULL){
+		if(!left)
+			cout<<indent+'|'<<endl;
+	}
     if (n->left)
     {
         output_impl(n->left, true, indent + (left ? "      " : "|     "));

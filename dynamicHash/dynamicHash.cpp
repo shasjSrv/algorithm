@@ -40,8 +40,9 @@ DynicHash<T>::~DynicHash()
 template<typename T>
 void DynicHash<T>::calculateHash(T val)
 {
+	int sourceSize = m_hashList.size();
 	for(int i = m_hashList.size() - 1; i >= 0 ; i--){
-		if((val & i) == i){
+		if((val % sourceSize) == i){
 			if((*m_hashList[i]).size() < m_size)
 				(*m_hashList[i]).push_back(val);
 			else
@@ -54,7 +55,8 @@ void DynicHash<T>::calculateHash(T val)
 template<typename T>
 void DynicHash<T>::expendHashTable(T val,int i)
 {
-	int sourceSize = m_hashList.size();
+	unsigned int sourceSize = m_hashList.size();
+	unsigned int half = sourceSize / 2;
 	for(int j = 0; j < sourceSize ; j++){
 		if(j == i){
 			list<T> * newlist = new(list<T>);
@@ -62,23 +64,24 @@ void DynicHash<T>::expendHashTable(T val,int i)
 				cout<<"new error,can't insert:"<<val<<endl;
 				return;
 			}
-			for(int k = i,g = i;k > 0 || g < sourceSize;){
-				if(k > m_initSize){
-					k -= m_initSize;
+			unsigned int k = i,g = i;
+			if(k > half - 1){
+				k -= half;
+			}
+			if(g <= half - 1){
+				g += half;
+			}
+			if(i / half % 2 == 1){				//look forawrd to find first bucket if it is odd
+				if(m_hashList[k] == m_hashList[i]){
+					/*if (i < half - 1)*/
+					//if(m_hashList[i] == m_hashList[i + half])
+					//else
+					/*if(m_hashList[i] == m_hashList[i - half])*/
+					j = k;
 				}
-				if(g < sourceSize -4){
-					g += m_initSize;
-				}
-				if(i / m_initSize % 2 == 1){				//look forawrd to find first bucket if it is odd
-					if(m_hashList[k] == m_hashList[i]){
-						j = k;
-						break;
-					}
-				}else{
-					if(m_hashList[g] == m_hashList[i]){
-						j = g;
-						break;
-					}
+			}else{
+				if(m_hashList[g] == m_hashList[i]){
+					j = g;
 				}
 			}
 			if(j == i)
@@ -97,13 +100,14 @@ void DynicHash<T>::fineTune(T val,int i,int j,list<T> * newlist)
 	list<T> * p = m_hashList[i];
 	typename list<T>::iterator pnlist = (*m_hashList[i]).begin();
 	typename list<T>::iterator plist;
-	cout<<"insert m_or:"<<m_or[i]<<endl;;
 	m_zeroAnd = ~m_or[i];
+	cout<<"insert m_or:"<<m_or[i]<<endl;
 	for(pnlist = (*m_hashList[i]).begin(); pnlist != (*m_hashList[i]).end() ;){
 		T temp = *pnlist;
 		cout<<temp<<endl;
 		cout<<(temp&m_zeroAnd)<<endl;
-		if ((temp & m_zeroAnd) == temp ){
+		cout<< ((temp % m_or[i]) & m_zeroAnd) << endl;
+		if ((temp&m_zeroAnd) == temp ){
 			pnlist++;
 		}else{
 			(*newlist).push_back(temp);
@@ -175,57 +179,75 @@ bool  DynicHash<T>::findVal(T val,int &i,int &j)
 	return false;
 }
 
+
 template<typename T>
 bool  DynicHash<T>::deleteVal(T val)
 {
 	int i=-1,j=0;
-	bool ok = false;
+	bool ok = true;
 	if(findVal(val,i,j)){
 		list<T> * resource = m_hashList[i];
 		list<T> * destination;
 		(*m_hashList[i]).remove(val);
 		if((*m_hashList[i]).size() == 0){
 			int temp = i % m_initSize;
-			int sourceSize = m_hashList.size();
-			for(int k = temp + m_hashList.size() - m_initSize;k >= 0; k-=4){
-				if(m_hashList[k] != m_hashList[i]){
-					if(k != i){
-						destination = m_hashList[k];
-						ok = true;
-						unsigned int half = m_hashList.size()/2;
-						if(i < half){
-							if(destination == m_hashList[i + half]){
-								m_or[i] = m_or[i] >> 1;
-								cout<<"m_or:"<<m_or[i]<<endl;
-							}
-						}else{
-							if(destination == m_hashList[i - half]){
-								m_or[i] = m_or[i] >> 1;
-								cout<<"m_or:"<<m_or[i]<<endl;
-							}
-						}
-					}
-				}else{
-					continue;
-				}
+			unsigned int sourceSize = m_hashList.size();
+			unsigned int half = m_hashList.size()/2;
+			//short halfFlag = 0;			//0 
+			/*for(int k = temp + m_hashList.size() - m_initSize;k >= 0; k-=4){*/
+				//if(m_hashList[k] != m_hashList[i]){
+					//if(k != i){
+						//destination = m_hashList[k];
+						//ok = true;
+						//if(i < half){
+							//if(destination == m_hashList[i + half]){
+								//m_or[i] = m_or[i] >> 1;
+								//cout<<"m_or:"<<m_or[i]<<endl;
+							//}
+						//}else{
+							//if(destination == m_hashList[i - half]){
+								//m_or[i] = m_or[i] >> 1;
+								//cout<<"m_or:"<<m_or[i]<<endl;
+							//}
+						//}
+					//}
+				//}else{
+					//continue;
+				//}
+			/*}*/
+			unsigned int k = i,g = i;
+			if(k > half - 1){
+				k -= half;
 			}
-			for(int k = i,g = i;k > 0 || g < sourceSize;){
-				if(k > m_initSize){
-					k -= m_initSize;
-				}
-				if(g < sourceSize -4){
-					g += m_initSize;
-				}
-				if(i / m_initSize  % 2 == 1){
+			if(g <= half - 1){
+				g += half;
+			}
+			if(i / half  % 2 == 1){
+				if(m_hashList[i] == m_hashList[k]){
+					ok = false;
+					/*if (i < half - 1)*/
+					//m_hashList[i] = m_hashList[i + half];
+					//else
+					/*m_hashList[i] = m_hashList[i - half];*/
+				}else{
 					m_hashList[i] = m_hashList[k];
-					break;
+					m_or[k] = m_or[i] = m_or[i] >> 1;
+				}
+			}else{
+				if(m_hashList[i] == m_hashList[g]){
+					ok = false;
+					/*if (i < half - 1)*/
+					//m_hashList[i] = m_hashList[i + half];
+					//else
+					/*m_hashList[i] = m_hashList[i - half];	*/				
 				}else{
 					m_hashList[i] = m_hashList[g];
-					break;
+					m_or[g] = m_or[i] = m_or[i] >> 1;
 				}
 			}
+
 			if(ok){
-			  delete resource;
+				delete resource;
 			}
 		}
 		return true;	

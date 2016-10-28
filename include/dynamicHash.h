@@ -23,8 +23,6 @@ private:
 	vector<int>			m_or;			//for new bucket we use it to distinguish new bit which belones to 1
 	int					m_zeroAnd;		//for new bucket we use it to distinguish new bit which belones to 0
 	const int			m_initSize;
-	/*int					m_serchAnd;		//to & with val for hash serch;*/
-	/*vector<int>			m_serchOr;      //to left shift find the appropriate value for m_serchAnd*/
 };
 
 #endif
