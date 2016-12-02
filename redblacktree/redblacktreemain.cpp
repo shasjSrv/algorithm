@@ -8,7 +8,7 @@ void readDataset(vector<int> &v,int num)
 	cout<<"num:"<<num<<endl;
 	v.clear();
 	ifstream fi("redBlacktestDataset.txt");
-	if(fi == NULL)
+	if(!fi.is_open())
 		return;
 	int n = 0,temp,record;
 	bool ok = true;
